@@ -1,0 +1,317 @@
+:root {
+    --main-text-color: #434455;
+    --second-text-color: #E7E9FC;
+    --main-title-color: #2E2F42;
+    --second-title-color: #FFFFFF;
+    --accent-color: #4D5AE5;
+    --main-btn: #4D5AE5;
+    --second-btn: #F4F4FD;
+    --third-btn: #FFFFFF;
+    --main-background-color: #FFFFFF;
+    --second-background-color: #2E2F42;
+    --third-background-color: #F4F4FD;
+    --logo-footer: #F4F4FD;
+    --first-btn-focus: #404BBF;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--main-title-color);
+    background-color: var(--main-background-color);
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.logo {
+    margin-right: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-title-color);
+}
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+.link:hover, 
+.link:focus,
+.nav-item.link.current {
+    color: var(--accent-color);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.caption {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);     
+} 
+.section {
+    width: 100%;
+    padding: 120px 15px;
+}
+/*-----------------header---------------------*/
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    padding: 24px 0;
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+}
+.header-address {
+    margin-left: auto;
+}
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+   
+}   
+.address-item {
+    padding: 24px 0;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+.address .tel {
+    margin-left: 40px;
+}
+/*-----------------hero---------------------*/
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-color: var(--second-background-color);
+}
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto 48px auto;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+.hero-btn {
+    min-width: 56px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border: transparent;
+    border-radius: 4px;
+    display: block;
+    color: var(--third-btn);
+    background-color: var(--main-btn);
+
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--first-btn-focus);
+}
+/*-----------------about---------------------*/
+.about {
+    padding-bottom: 0;
+}
+.about-list {
+    display: flex;
+    gap: 24px;
+}
+.about-item {
+    width: 264px;
+}
+.about-item-title {
+    margin-bottom: 8px;
+}
+
+/*--------------------product-----------------*/
+.product-title {
+    margin: 0 auto 72px auto;
+}
+.product-list {
+    display: flex;
+    gap: 24px;
+
+}
+.product-img {
+    width: calc((100%-48)/3);
+
+}
+
+/*----------------------team-----------------*/
+.team {
+    background-color: var(--third-background-color);
+}
+.team-title {
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.team-item {
+    width: ((100%-(24*3))/4);
+}
+
+.team-name {
+    text-align: center;
+    margin-bottom: 8px;
+    
+
+}
+.team-description{
+    padding: 32px 60px;
+    border: transparent;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-background-color);
+}
+.team-position {
+    text-align: center;
+
+}
+/*--------------------footer------------------*/
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--second-background-color);
+}
+.logo-footer {
+   
+    color: var(--logo-footer);
+}
+.footer-text {
+    width: 264px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+/*-------------------portfolio--------------------*/
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-btn {
+    padding: 12px 24px;
+    text-align: center;
+    color: var(--main-btn);
+    background-color: var(--second-btn);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--third-btn);
+    background-color: var(--main-btn);
+}
+.portfolio-list-btn {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.portfolio-list-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-item {
+    width: ((100%-(2*24))/3);
+}
+.portfolio-description {
+    padding-top:32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+}
+.portfolio-item-title {
+    margin-bottom: 8px;
+}
