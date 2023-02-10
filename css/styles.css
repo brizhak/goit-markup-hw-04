@@ -105,8 +105,7 @@ img {
     color: var(--main-text-color);     
 } 
 .section {
-    width: 100%;
-    padding: 120px 15px;
+    padding: 120px 0;
 }
 /*-----------------header---------------------*/
 .header {
@@ -321,11 +320,13 @@ img {
     text-align: center;
 
 }
+.text {
+    margin-bottom: 8px;
+}
 .team-soc-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 8px;
 
 }
 .team-soc-item {
@@ -338,7 +339,6 @@ img {
     height: 100%;
     border-radius: 50%;
     background-color: var(--accent-color);
-    margin-top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,8 +440,14 @@ img {
     width: ((100%-(2*24))/3);
     
 }
-.portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    color:  var(--main-title-color);
+
+}
+.portfolio-link:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-description {
     padding-top:32px;
